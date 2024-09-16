@@ -1,0 +1,384 @@
+/* nav bar */
+.nav-link {
+  font-size: 13px !important;
+  font-family: "Roboto", system-ui !important;
+  font-weight: 300 !important;
+  color: black !important;
+  text-transform: uppercase !important;
+  font-style: normal !important;
+}
+.nav-item i {
+  margin-top: 8px !important;
+}
+.navbar {
+  padding: 20px 70px !important;
+}
+.navbar-nav {
+  gap: 30px !important;
+}
+/* hero */
+.hero {
+  padding: 100px 0px;
+  background: url(imgs/banner-bg.jpg.webp);
+
+  background-position: center;
+  background-size: cover;
+}
+.hero-img img {
+  height: 100%;
+  width: 100%;
+}
+.hero-content {
+  padding: 30px 50px;
+}
+.hero-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 20px;
+  font-size: 70px;
+}
+.hero-content p {
+  font-size: 14px;
+  color: #aba8a8;
+  font-family: "Roboto", system-ui !important;
+  margin-top: 10px;
+}
+.bag {
+  display: flex;
+}
+.hero-circle {
+  height: 50px;
+  width: 50px;
+  background-image: linear-gradient(
+    to right,
+    #ffae00,
+    #ffa200,
+    #ff9500,
+    #ff8800,
+    #ff7b00
+  );
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+.bag p {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 17px;
+  margin-left: 15px;
+  color: black;
+}
+/* services */
+.services .row {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 30px 0px;
+}
+.services {
+  padding: 80px 100px;
+}
+.services-content {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  flex-direction: column;
+  border-right: 1px solid #eeeeee;
+  justify-content: center;
+}
+.services-content i {
+  font-size: 35px;
+  margin-top: 10px;
+}
+.services-content h5 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.services-content p {
+  font-size: 14px;
+  font-family: "Roboto", system-ui !important;
+}
+.services-content1 {
+  display: flex;
+  padding: 10px 0px;
+  align-items: center;
+  flex-direction: column;
+
+  justify-content: center;
+}
+.services-content1 i {
+  font-size: 35px;
+  margin-top: 10px;
+}
+.services-content1 h5 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.services-content1 p {
+  font-size: 14px;
+  font-family: "Roboto", system-ui !important;
+}
+/* blog */
+.blog-img {
+  position: relative;
+  /* padding: 10px; */
+}
+.blog-img img {
+  width: 100%;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.493);
+  width: 100%;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s ease-in-out;
+  bottom: 0;
+}
+.overlay p {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+.blog-img:hover .overlay {
+  opacity: 1;
+  height: 100%;
+}
+/* products */
+.products {
+  text-align: center;
+  padding: 50px 0px;
+}
+.heading {
+  padding: 0px;
+}
+.heading h1 {
+  font-size: 36px;
+  font-family: "Poppins", sans-serif;
+}
+.heading p {
+  color: #8e8888;
+  font-size: 14px;
+
+  font-family: "Roboto", system-ui !important;
+}
+/* product */
+.product-content {
+  padding: 10px 5px;
+  text-align: start;
+}
+.product-content img {
+  width: 100%;
+}
+.product-content h6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin-top: 15px;
+}
+.price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 8px;
+}
+.price h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.price p {
+  margin-bottom: 10px;
+  text-decoration: line-through;
+  color: #cccccc;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.tags {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.tags .icon-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tags .icon-box p {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.2s;
+  display: none;
+  transform: translateX(-50px);
+}
+
+.tags .icon-box:hover .circle {
+  background-color: #ff8800 !important;
+}
+
+.tags .icon-box:hover p {
+  display: block;
+  transform: translateX(10px);
+}
+
+.tags .circle {
+  height: 35px;
+  width: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #828cb1;
+  border-radius: 50%;
+}
+
+.tags .circle i {
+  color: white;
+}
+/* deal */
+.deal-picture {
+  background: linear-gradient(
+      to right,
+      rgba(5, 5, 5, 0.719),
+      rgba(5, 5, 5, 0.719)
+    ),
+    url(imgs/exclusive.jpg.webp);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 160px 0px;
+}
+.pictre-data {
+  padding: 50px 0px;
+}
+.pictre-data h1 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+}
+.pictre-data p {
+  color: white;
+}
+.pictre-data button {
+  height: 50px;
+  width: 150px;
+  margin-top: 10px;
+  background-image: linear-gradient(
+    to right,
+    #ffae00,
+    #ffa200,
+    #ff9500,
+    #ff8800,
+    #ff7b00
+  );
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+.deals-content {
+  padding: 30px 70px;
+  display: flex;
+  text-align: center;
+  background-color: #f9f9ff;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.deals-content img {
+  height: 350px;
+  width: 350px;
+}
+.deals-content h4 {
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+}
+/* brand */
+.brand {
+  padding: 50px 0px;
+}
+.brand-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.brand-contentimg {
+  filter: grayscale(500px);
+}
+/* week-deals */
+.week-deals {
+  padding: 50px;
+  text-align: center;
+}
+.deals-picture {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deals-picture img {
+  width: 300px;
+  height: 300px;
+}
+.week-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 5px;
+}
+.week-content img {
+  border-radius: 5px;
+}
+
+.week-data p {
+  margin: 0px;
+  text-align: start;
+  margin-top: 10px;
+}
+.week-data {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.week-data p {
+  text-transform: uppercase;
+  font-family: "Roboto", system-ui !important;
+  font-size: 14px;
+}
+.week-data .price p {
+  margin: 0px;
+}
+.week-data .price h5 {
+  margin: 0px;
+}
+.week-data .price {
+  margin: 5px;
+}
